@@ -5,3 +5,54 @@ html, body {
 canvas {
   display: block;
 }
+#archive{
+
+background:#050505;
+
+color:#d8d8d8;
+
+padding:120px 15%;
+
+font-family:Arial,sans-serif;
+
+line-height:1.8;
+
+min-height:100vh;
+
+}
+
+#archive h2{
+
+text-align:center;
+
+letter-spacing:4px;
+
+margin-bottom:50px;
+
+font-size:32px;
+
+color:white;
+
+}
+
+#archive p{
+
+max-width:800px;
+
+margin:auto;
+
+margin-bottom:25px;
+
+}
+
+.end{
+
+text-align:center;
+
+opacity:0.5;
+
+margin-top:80px;
+
+letter-spacing:3px;
+
+}
