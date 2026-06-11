@@ -248,30 +248,34 @@ function drawIntro() {
   textSize(16);
   text("ENTER", width / 2, height / 2 + 96);
 
-  let hoveringArchive =
+let archiveBounce =
+sin(frameCount * 0.08) * 8;
 
-mouseX > width/2 - 100 &&
-mouseX < width/2 + 100 &&
-mouseY > height/2 + 130 &&
-mouseY < height/2 + 170;
+let archiveGlow =
+180 +
+sin(frameCount * 0.06) * 75;
 
-if(hoveringArchive){
-
-fill(255);
-
-}else{
-
-fill(180);
-
-}
+fill(archiveGlow);
 
 textSize(13);
 
 text(
-"ACCESS ARCHIVE ↓",
+"> ACCESS ARCHIVE ↓",
 width/2,
-height/2 + 150
+height/2 + 150 + archiveBounce
 );
+
+if(random() < 0.005){
+
+fill(255,80);
+
+text(
+"> ACCESS ARCHIVE ↓",
+width/2 + random(-2,2),
+height/2 + 150 + archiveBounce
+);
+
+}
 
 }
 
