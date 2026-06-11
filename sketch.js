@@ -248,7 +248,18 @@ function drawIntro() {
   textSize(16);
   text("ENTER", width / 2, height / 2 + 96);
 
+  fill(180);
+
+textSize(13);
+
+text(
+"ACCESS ARCHIVE ↓",
+width/2,
+height/2 + 150
+);
+
 }
+
 
 //////////////////////////////////////////////////
 // TRANSIÇÃO
@@ -543,9 +554,20 @@ windowHeight
 
   }
 
-//////////////////////////////////////////////////
-// ATIVAR ÁUDIO
-//////////////////////////////////////////////////
+if(
+mouseX > width/2 - 100 &&
+mouseX < width/2 + 100 &&
+mouseY > height/2 + 130 &&
+mouseY < height/2 + 170
+){
+
+document
+.getElementById("archive")
+.scrollIntoView({
+behavior:"smooth"
+});
+
+}
 
 
 }
