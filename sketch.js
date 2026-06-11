@@ -248,7 +248,22 @@ function drawIntro() {
   textSize(16);
   text("ENTER", width / 2, height / 2 + 96);
 
-  fill(180);
+  let hoveringArchive =
+
+mouseX > width/2 - 100 &&
+mouseX < width/2 + 100 &&
+mouseY > height/2 + 130 &&
+mouseY < height/2 + 170;
+
+if(hoveringArchive){
+
+fill(255);
+
+}else{
+
+fill(180);
+
+}
 
 textSize(13);
 
