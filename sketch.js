@@ -249,11 +249,11 @@ function drawIntro() {
   text("ENTER", width / 2, height / 2 + 96);
 
 let archiveBounce =
-sin(frameCount * 0.08) * 8;
+sin(frameCount * 0.08) * 25;
 
 let archiveGlow =
 180 +
-sin(frameCount * 0.06) * 75;
+sin(frameCount * 0.06) * 95;
 
 fill(archiveGlow);
 
